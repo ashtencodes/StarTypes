@@ -1,0 +1,53 @@
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; 
+  background: #122e6c;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #122e6c;
+  cursor: pointer;
+}
+
+.prediction {
+  font-size: xx-large;
+}
+
+.mainTable {
+  //font-size: x-large;
+  width: "90%"
+}
+.ten {
+  width: 10%;
+  text-align: right;
+  font-size: large;
+}
+.twenty {
+  width: 20%;
+  text-align: right;
+  font-size: large;
+}
+.thirty {
+  font-size: large;
+  width: 30%;
+  text-align: right;
+}

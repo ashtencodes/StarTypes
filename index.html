@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Admission prediction</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="slidecontainer">
+      <table class="mainTable" width="80%">
+        <colgroup>
+          <col class="twenty" />
+          <col />
+        </colgroup>
+        <tr>
+          <td>Temperature (K): <span id="valueTemperature"></span></td> 
+          <td><input type="range" min="1939" max="40000" value="15000" class="slider" id="sliderTemperature"></td>
+        </tr>
+      
+        <tr>
+          <td>Luminosity (L/L☉): <span id="valueLuminosity"></span></td>
+          <td><input type="range" min="0" max="270000" value="1" class="slider" id="sliderLuminosity"></td>
+        </tr>
+         
+        <tr>
+          <td>Radius (R/R☉): <span id="valueRadius"></span></td>
+          <td><input type="range" min="0.0084" max="1948.5" value="1" step="1" class="slider" id="sliderRadius"></td>
+        </tr>
+
+        <tr>
+          <td>Absmag (Mv): <span id="valueAbsmag"></span></td>
+          <td><input type="range" min="-11.92" max="20.06" value="4" step="0.1" class="slider" id="sliderAbsmag"></td>
+        </tr>
+        <p>
+          <tr>
+          <td> Color </td>
+        <td> <select id="Color" name="Color">
+          <option value="Red">Red</option>
+          <option value="Blue">Blue</option>
+          <option value="White">White</option>
+          <option value="Orange">Orange</option>
+          <option value="yellowish">Yellowish</option>
+        </select> </td>
+        </tr>
+        <p>
+          <tr>
+          <td> Spectral Class </td>  
+        <td> <select id="Spectralclass" name="Spectralclass">
+          <option value="M">M</option>
+          <option value="B">B</option>
+          <option value="O">O</option>
+          <option value="K">G</option>
+          <option value="J">J</option>
+          <option value="F">F</option>
+          <option value="K">K</option>
+        </select> </td>
+        </tr>
+    </table>
+    </div>
+    
+    <div class="prediction">
+      <p> Prediction: <span id="valuePrediction"></span> </p>
+    </div>
+    <script src="script.js"></script>  
+  </body>
+</html>
